@@ -1,8 +1,12 @@
-export default () => {
+import Layout from '../components/layout/layout';
+
+const Home = () => {
   return (
-    <div>
+    <Layout>
       <h1>Homepage</h1>
       <p>Welcome to your new next.js application.</p>
-    </div>
+    </Layout>
   );
 };
+
+export default Home;
