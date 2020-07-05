@@ -6,13 +6,13 @@ describe('Homepage Test', () => {
     render(<HomePage />);
   });
 
-  test(`Title should contain 'Homepage'`, () => {
-    expect(screen.getByText(/Homepage/i)).toBeInTheDocument();
-  });
+  // test(`Title should contain 'Homepage'`, () => {
+  //   expect(screen.getByText(/Homepage/i)).toBeInTheDocument();
+  // });
 
-  test(`Content should contain 'Welcome to your new next.js application.'`, () => {
-    expect(screen.getByText('Welcome to your new next.js application.')).toBeInTheDocument();
-  });
+  // test(`Content should contain 'Welcome to your new next.js application.'`, () => {
+  //   expect(screen.getByText('Welcome to your new next.js application.')).toBeInTheDocument();
+  // });
 
   test.skip(`Skip Test Example`, () => {});
 });
