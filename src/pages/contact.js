@@ -1,7 +1,5 @@
-export default () => {
-  return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
-  );
+import Contact from '../container/contact/contact';
+
+export default ({ children }) => {
+  return <Contact>{children}</Contact>;
 };

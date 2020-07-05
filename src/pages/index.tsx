@@ -1,14 +1,5 @@
-import Layout from '../components/layout/layout';
+import Home from '../container/home/home';
 
-const Home = () => {
-  return (
-    <div>
-      <Layout>
-        <h1 className='title'>Homepage</h1>
-        <p>Welcome to your new next.js application.</p>
-      </Layout>
-    </div>
-  );
+export default ({ children }) => {
+  return <Home>{children}</Home>;
 };
-
-export default Home;

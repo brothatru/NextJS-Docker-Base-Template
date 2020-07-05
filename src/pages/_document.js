@@ -21,7 +21,9 @@ class MyDocument extends Document {
         </body>
         <style global jsx>
           {`
-            margin: 0;
+            body {
+              margin: 0px;
+            }
           `}
         </style>
       </Html>

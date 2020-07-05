@@ -1,7 +1,5 @@
-export default () => {
-  return (
-    <div>
-      <h1>Services Page</h1>
-    </div>
-  );
+import Services from '../container/services/services';
+
+export default ({ children }) => {
+  return <Services>{children}</Services>;
 };

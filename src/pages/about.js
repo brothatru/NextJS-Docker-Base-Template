@@ -1,9 +1,5 @@
-import Layout from '../components/layout/layout';
+import About from '../container/about/about';
 
-export default () => {
-  return (
-    <Layout>
-      <h1>About Page</h1>
-    </Layout>
-  );
+export default ({ children }) => {
+  return <About>{children}</About>;
 };

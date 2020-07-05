@@ -1,7 +1,5 @@
-export default () => {
-  return (
-    <div>
-      <h1>Education Page</h1>
-    </div>
-  );
+import Education from '../container/education/education';
+
+export default ({ children }) => {
+  return <Education>{children}</Education>;
 };

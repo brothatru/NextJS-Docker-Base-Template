@@ -79,7 +79,7 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
           .root {
             position: relative;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 1rem;
           }
           .wrapper {
             box-sizing: border-box;
