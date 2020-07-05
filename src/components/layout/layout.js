@@ -17,8 +17,11 @@ const Layout = ({ children }) => {
       <div className='layout-container'>
         {children}
         <style jsx>{`
+          height: 50vh;
+
           .layout-container {
             padding: 120px 0;
+            margin: 1rem;
           }
         `}</style>
       </div>

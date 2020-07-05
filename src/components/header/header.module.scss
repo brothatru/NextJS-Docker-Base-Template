@@ -1,0 +1,59 @@
+.header-root {
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+}
+.header-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.branding {
+  padding: 10px;
+}
+.branding a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  display: inline-block;
+  color: inherit;
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.header ul {
+  margin: 1em 0;
+  padding: 10px 0;
+  display: flex;
+  // flex-wrap: wrap;
+}
+
+.header ul li {
+  list-style: none;
+  line-height: 18px;
+  padding: 0 1.3em;
+  width: 100%;
+}
+
+.header a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.header a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;        
+}
+.showNav{
+  display: none;
+}

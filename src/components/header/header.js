@@ -20,7 +20,7 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
       <div className='wrapper'>
         <div className='branding'>
           <Link href='/'>
-            <a>RM</a>
+            <a>RYAN MORIMOTO</a>
           </Link>
           <button
             aria-label='nav-icon'
@@ -54,11 +54,11 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
                 <a>Education</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href='/events/'>
                 <a>Events</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href='/contact/'>
                 <a>Contact</a>
@@ -76,64 +76,73 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
       </div>
       <style jsx>
         {`
-        .root {
-          position: relative;
-          width: 100%;
-          border: 1px solid black;
-        }
-        .wrapper {
-          box-sizing: border-box;
-          margin: 0 auto;
-          width: 100%;
-          padding: 0em 1.5em;
-          display: flex;
-          justify-content: space-between;
-        }
-        
-        .branding a {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 30px;
-          line-height: 45px;
-          display: inline-block;
-          padding 10px;
-          color: inherit;
-        }
-        
-        .header {
-          display: flex;
-          justify-content: flex-end;
-        }
-        
-        .header ul {
-          margin: 1em;
-          padding: 10px;
-          display: flex;
-        }
-        
-        .header ul li {
-          list-style: none;
-          line-height: 18px;
-          padding: 0 1.3em;
-          width: 100%;
-        }
-        
-        .header a:hover {
-          border-bottom: 1px solid #000000;
-        }
-        
-        .header a {
-          background-color: transparent;
-          text-decoration: none;
-          color: #000000;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;        
-        }
-        .showNav{
-          display: none;
-        }
-      `}
+          .root {
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+          }
+          .wrapper {
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Anonymous Pro';
+            font-style: regular;
+          }
+          .branding {
+            font-family: 'Bebas Neue';
+            position: absolute;
+            width: 330px;
+            left: 2.33%;
+            right: 78.85%;
+            top: 0;
+            bottom: 1;
+          }
+          .branding a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 60px;
+            display: inline-block;
+            color: inherit;
+            text-decoration: none;
+          }
+
+          .header {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+          }
+          .header ul {
+            margin: 1em 0;
+            padding: 10px 0;
+            display: flex;
+          }
+
+          .header ul li {
+            list-style: none;
+            line-height: 18px;
+            padding: 0 1.3em;
+            width: 100%;
+          }
+
+          .header a:hover {
+            border-bottom: 1px solid #000000;
+          }
+
+          .header a {
+            background-color: transparent;
+            text-decoration: none;
+            color: #000000;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+          }
+          .showNav {
+            display: none;
+          }
+        `}
       </style>
     </div>
   );
