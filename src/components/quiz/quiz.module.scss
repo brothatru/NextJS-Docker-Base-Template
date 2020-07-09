@@ -1,0 +1,33 @@
+.root {
+  background-color: #F1F1F5;
+  text-align: center;
+  padding: 1.5rem;
+  height: 40%;
+  position: relative;
+  
+  h1 {
+    font-family: 'Abril Fatface';
+    color: #2D2D2D;
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 3px #eeddff66;
+    margin: 0;
+    
+  }
+  
+  p {
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: #2D2D2D;
+    margin-bottom: 5em;
+  }
+  
+  a {
+    font-family: 'Anonymous Pro';
+    font-size: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #00096E;
+    padding: 1em 2em;
+  }
+}
+

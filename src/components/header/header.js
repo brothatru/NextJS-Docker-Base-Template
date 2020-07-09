@@ -1,38 +1,33 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Icon from '../icon';
-import { cn } from '../../lib/helpers';
+
+import styles from './header.module.scss';
 
 const Header = ({ onHideNav, onShowNav, showNav }) => {
-  const [toggleNav, setToggleNav] = useState(true);
-
-  const handleToggle = (e) => {
-    e.preventDefault();
-    setToggle(!toggle);
-  };
-
-  const toggleToTrue = () => {
-    if (toggle === false) setToggle(!toggle);
-  };
-
   return (
-    <div className='root'>
-      <div className='wrapper'>
-        <div className='branding'>
+    <div className={styles.root}>
+      <div className={styles.wrapper}>
+        <div className={styles.branding}>
           <Link href='/'>
             <a>RYAN MORIMOTO</a>
           </Link>
           <button
-            aria-label='nav-icon'
-            className='toggleNavButton'
+            className={styles.toggleNavButton}
             onClick={showNav ? onHideNav : onShowNav}
-            style={{ display: 'none' }}
+            aria-label='nav-icon'
           >
-            <Icon symbol='hamburger' />
+            {!showNav ? <Icon symbol='hamburger' /> : <div className={styles.hideNav}>X</div>}
           </button>
+          {/* <button
+            className={styles.hideNav}
+            onClick={showNav ? onHideNav : onShowNav}
+          >
+            <p>X</p>
+          </button> */}
         </div>
 
-        <nav className={cn('header', showNav && 'showNav')}>
+        <nav className={showNav ? styles.showNav : styles.tabs}>
           <ul>
             <li>
               <Link href='/'>
@@ -65,85 +60,8 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
               </Link>
             </li>
           </ul>
-          <button
-            className='toggleNavButton'
-            onClick={showNav ? onHideNav : onShowNav}
-            style={{ display: 'none' }}
-          >
-            <p>X</p>
-          </button>
         </nav>
       </div>
-      <style jsx>
-        {`
-          .root {
-            position: relative;
-            width: 100%;
-            margin-top: 1rem;
-          }
-          .wrapper {
-            box-sizing: border-box;
-            margin: 0 auto;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            font-family: 'Anonymous Pro';
-            font-style: regular;
-          }
-          .branding {
-            font-family: 'Bebas Neue';
-            position: absolute;
-            width: 330px;
-            left: 2.33%;
-            right: 78.85%;
-            top: 0;
-            bottom: 1;
-          }
-          .branding a {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 50px;
-            line-height: 60px;
-            display: inline-block;
-            color: inherit;
-            text-decoration: none;
-          }
-
-          .header {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-          }
-          .header ul {
-            margin: 1em 0;
-            padding: 10px 0;
-            display: flex;
-          }
-
-          .header ul li {
-            list-style: none;
-            line-height: 18px;
-            padding: 0 1.3em;
-            width: 100%;
-          }
-
-          .header a:hover {
-            border-bottom: 1px solid #000000;
-          }
-
-          .header a {
-            background-color: transparent;
-            text-decoration: none;
-            color: #000000;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-          }
-          .showNav {
-            display: none;
-          }
-        `}
-      </style>
     </div>
   );
 };

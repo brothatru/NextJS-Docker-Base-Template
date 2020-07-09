@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 564px;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+}
+
+.title {
+  font-family: 'Abril Fatface';
+  color: #FFFFFF; // #FFFFFF when on pic
+  font-size: 1.9rem;
+  text-shadow: 1px 1px 3px #eeddff66;
+  margin: 0;
+}
+

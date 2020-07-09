@@ -1,59 +1,127 @@
-.header-root {
+.root {
   position: relative;
-  width: 100%;
-  border: 1px solid black;
+  margin-top: 1rem;
+  
 }
-.header-wrapper {
+.wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: 'Anonymous Pro';
+  font-style: regular;
 }
 .branding {
-  padding: 10px;
+  font-family: 'Bebas Neue';
+  position: absolute;
+  width: 34%;
+  left: 2.33%;
+  right: 78.85%;
+  top: 4%;
+  bottom: 1;
+  
+  @media(max-width: 840px) {
+    width: 80%;
+    margin-left: 1em;
+  }
 }
 .branding a {
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 3.2em;
   display: inline-block;
   color: inherit;
-  padding: 0 10px;
+  text-decoration: none;
 }
-
-.header {
+.tabs{
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  
+  @media(max-width: 840px) {
+    display: none;
+  }
 }
-.header ul {
+
+.toggleNavButton {
+  display: none;
+  background: transparent;
+  border: none;
+  z-index: 100;
+  
+  &:focus {
+    outline: none;
+  }
+  
+  @media(max-width: 840px) {
+    display: block;
+    position: fixed;
+    left: 82.85%;
+    top: 2.8%;
+  }
+}
+
+.tabs ul {
   margin: 1em 0;
-  padding: 10px 0;
+  padding: 1rem 0;
+  width: 65%;
   display: flex;
-  // flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
 }
 
-.header ul li {
+.tabs ul li {
   list-style: none;
-  line-height: 18px;
-  padding: 0 1.3em;
+  margin: 0 1.5em;
   width: 100%;
+  text-align: center;
 }
 
-.header a:hover {
+.tabs a:hover {
   border-bottom: 1px solid #000000;
 }
 
-.header a {
+.tabs a {
   background-color: transparent;
   text-decoration: none;
   color: #000000;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;        
+  font-size: 1.1rem;
 }
-.showNav{
-  display: none;
+.showNav {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  padding-right: 100%;
+  left: 43%;
+  height: 100%;
+  top: 0;
+  box-shadow: 0px 0px 10px #232931;
+  background-color: #fff;
+
+  ul {
+    padding: 0;    
+  }
+  li {
+    list-style: none;
+    margin: 1em;
+    padding: 1em 2em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.hideNav {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  font-size: 2em;
+  opacity: 0.8;
+  top: 3.88%;
+  left: 88%;
 }
