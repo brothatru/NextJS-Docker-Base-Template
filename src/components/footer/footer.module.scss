@@ -24,10 +24,6 @@
   li {
     list-style: none;
   }
-  
-  @media(max-width: 840px) {
-    display: none;
-  }
 }
 
 .terms a {
@@ -41,7 +37,29 @@
   margin: 0 auto;
   padding: 0;
   background-color: #dcfdee;
-  @media(max-width: 840px) {
+}
+
+@media(max-width: 840px) {
+  .root {
+    display: flex;
+  }
+  .navs {
+    display: none;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    
+    li {
+      margin: 0.2em;
+    }
+
+  }
+  .divider {
     display: none;
   }
 }

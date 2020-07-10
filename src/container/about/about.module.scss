@@ -2,6 +2,11 @@
   margin: 1rem;
   padding: 3rem;
   
+  @media(max-width: 840px) {
+    margin: 0;
+    padding: 0;
+  }
+  
   p {
     font-family: 'Lato';
     color: #2D2D2D;
@@ -20,6 +25,11 @@
     color: #2D2D2D;
     font-size: 1em;
   }
+  
+  @media (max-width: 840px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .picture {
@@ -28,6 +38,11 @@
   width: 50%;
   background-position: top 38% center;
   background-size: cover;
+  
+  @media(max-width: 840px) {
+    height: 50vh;
+    width: 100%;
+  }
 }
 
 .info {
@@ -41,5 +56,14 @@
     padding: 0 1em;
     font-size: 1.1em;
     line-height: 1.5em;
+  }
+  
+  @media(max-width: 840px) {
+    height: 50vh;
+    width: 100%;
+    
+    p {
+      padding: 0;
+    }
   }
 }

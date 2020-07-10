@@ -1,5 +1,9 @@
 import Layout from '../../components/layout/layout';
+import ContactForm from '../../components/contact-form/contactForm';
 import Container from '../../components/container/container';
+import Link from 'next/link';
+
+import styles from './contact.module.scss';
 
 import Hero from '../../components/hero/hero';
 
@@ -8,9 +12,17 @@ const Contact = () => {
     <Layout>
       <Hero image='/images/contact.jpg'></Hero>
       <Container>
-        <h1>Contact Page</h1>
-        <p>Welcome to BucketList System</p>
-        <p>PHR something</p>
+        <div className={styles.wrapper}>
+          <h1 className={styles.heading}>Let's get in touch.</h1>
+          <p className={styles.faq}>
+            Read my{' '}
+            <Link href='/'>
+              <a>FAQ</a>
+            </Link>{' '}
+            page
+          </p>
+        </div>
+        <ContactForm />
       </Container>
     </Layout>
   );

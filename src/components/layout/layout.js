@@ -17,10 +17,6 @@ const Layout = ({ children }) => {
         {children}
         <style jsx>{`
           background-color: #fff;
-          // .layout-container {
-          //   padding: 120px 0;
-
-          // }
         `}</style>
       </div>
       <Footer />

@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </Container>
       <div className={styles.mission}>
-        <div className={styles.picture}></div>
+        <div className={styles.picture} />
         <div className={styles.info}>
           <Subtitle>Mission</Subtitle>
           <p>

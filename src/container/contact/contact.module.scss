@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  
+  p {
+    margin: 2.5em;
+    
+    @media(max-width: 850px) {
+      margin-left: 0;
+    }
+  }
+  
+  @media(max-width: 850px) {
+    display: block;
+    text-align: center;
+    .faq {
+      margin: 2em 0;
+    }
+  }
+}
+
+.heading {
+  font-family: 'Abril Fatface';
+  
+}
+
+.faq { 
+  font-family: "Lato";
+  color: #000000;
+  
+  a {
+    color: #004FEC;
+    text-decoration: underline;
+  }
+  
+
+}
+

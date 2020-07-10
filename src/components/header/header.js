@@ -35,27 +35,27 @@ const Header = ({ onHideNav, onShowNav, showNav }) => {
               </Link>
             </li>
             <li>
-              <Link href='/about/'>
+              <Link href='/about'>
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href='/services/'>
+              <Link href='/services'>
                 <a>Services</a>
               </Link>
             </li>
             <li>
-              <Link href='/education/'>
+              <Link href='/education'>
                 <a>Education</a>
               </Link>
             </li>
             {/* <li>
-              <Link href='/events/'>
+              <Link href='/events'>
                 <a>Events</a>
               </Link>
             </li> */}
             <li>
-              <Link href='/contact/'>
+              <Link href='/contact'>
                 <a>Contact</a>
               </Link>
             </li>
