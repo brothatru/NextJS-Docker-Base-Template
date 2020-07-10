@@ -10,7 +10,7 @@ import Quiz from '../../components/quiz/quiz';
 const Home = () => {
   return (
     <Layout>
-      <Hero>
+      <Hero image='/images/home-hero.jpg' style={{ background: 'rgba(0, 0, 0, 0.15)' }}>
         <Title>Let's sustain a purposeful change in your life</Title>
       </Hero>
       <Container>

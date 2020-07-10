@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
   function handleHideNav() {
     setShowNav(false);
   }
-  console.log('showNav: ', showNav);
   return (
     <>
       <Header showNav={showNav} onHideNav={handleHideNav} onShowNav={handleShowNav} />

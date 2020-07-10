@@ -1,0 +1,45 @@
+.bio {
+  margin: 1rem;
+  padding: 3rem;
+  
+  p {
+    font-family: 'Lato';
+    color: #2D2D2D;
+    font-size: 1.15em;
+    padding-top: 1em;
+    line-height: 1.8em;
+
+  }
+}
+
+.mission {
+  display: flex;
+  
+  p {
+    font-family: 'Lato';
+    color: #2D2D2D;
+    font-size: 1em;
+  }
+}
+
+.picture {
+  content: "";
+  background-image: url("/images/mission-stanislav-kondratiev.jpg");
+  width: 50%;
+  background-position: top 38% center;
+  background-size: cover;
+}
+
+.info {
+  width: 50%;
+  height: 50vh;
+  padding: 2em;
+  background-color: #F1EBE3;
+  box-sizing: border-box;
+  
+  p {
+    padding: 0 1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+}
