@@ -1,0 +1,19 @@
+.subNav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 0.5px solid #797979;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+  
+  input {
+    font-size: 1rem;
+    padding-left: 2em;
+    background: #F4F4F4;
+    color: #707070;
+    border: none;
+    height: 2.5rem;
+    display: block;
+    margin: auto 0;
+  }
+}

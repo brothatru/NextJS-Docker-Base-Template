@@ -1,0 +1,35 @@
+.subHeader {
+  display: flex;
+  margin: auto 0.5rem;
+  justify-content: space-between;
+  width: 60%;
+  
+  div {
+    font-family: 'Lato';
+    font-size: 1.1rem;
+    margin: 0.1em 1.5em;
+    box-sizing: border-box;
+    line-height: 1.4em;
+    
+    &:first-child {
+      margin: 0.1em 1rem;
+      
+    }
+  
+    p {
+      margin: 0;
+      padding: 0.6rem 0;
+      border-bottom: 6px solid #FFFFFF;
+      border-top: 6px solid #FFFFFF;
+      transition: all 180ms ease-in-out;
+      
+      &:hover {
+        border-bottom: 6px solid #DCFDEE;
+        
+      }
+      
+    }
+    
+  }
+  
+}

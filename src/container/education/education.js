@@ -1,17 +1,20 @@
 import Layout from '../../components/layout/layout';
 import Container from '../../components/container/container';
+import Subheader from '../../components/subheader/subheader';
 
 import Hero from '../../components/hero/hero';
+
+import styles from './education.module.scss';
 
 const Education = () => {
   return (
     <Layout>
       <Hero image={'/images/education-kuma-kum.jpg'}></Hero>
-      <Container>
-        <h1>Education Page</h1>
-        <p>Welcome to BucketList System</p>
-        <p>PHR something</p>
-      </Container>
+      <div className={styles.subNav}>
+        <Subheader />
+        <input type='text' placeholder={`Search`} />
+      </div>
+      <Container></Container>
     </Layout>
   );
 };
